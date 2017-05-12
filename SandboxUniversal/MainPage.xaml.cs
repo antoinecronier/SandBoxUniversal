@@ -31,19 +31,13 @@ namespace SandboxUniversal
     {
         SqliteDBManager<Garage> sqlManagerGarage = new SqliteDBManager<Garage>();
         GarageUserControl garageUC = new GarageUserControl();
-        GarageUserControl garageUC1 = new GarageUserControl();
-        CrudUserControl garageCrud;
-        CrudUserControl garageCrud1;
+        CrudUserControl<Garage> garageCrud;
         public MainPage()
         {
             this.InitializeComponent();
             garageUC.CurrentGarage = new Garage("test", 1, 1);
-            garageCrud = new CrudUserControl(garageUC);
+            garageCrud = new CrudUserControl<Garage>(garageUC);
             this.GarageUC.Children.Add(garageCrud);
-
-            garageUC1.CurrentGarage = new Garage("test", 1, 1);
-            garageCrud1 = new CrudUserControl(garageUC1);
-            this.TestUC.Children.Add(garageCrud1);
             SetupEvents();
         }
 

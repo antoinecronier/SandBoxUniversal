@@ -22,14 +22,15 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ScrollViewer x:ConnectionId='1' Name="scrollViewer" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="6">
-            <Grid x:ConnectionId='5' Name="gridDisplay">
+        <ScrollViewer x:ConnectionId='1' Name="scrollViewer" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3">
+            <Grid x:ConnectionId='6' Name="gridDisplay">
                 
             </Grid>
         </ScrollViewer>
-        <Button x:ConnectionId='2' Name="add" Content="Add" Grid.Row="3" Grid.Column="0"/>
-        <Button x:ConnectionId='3' Name="update" Content="Update" Grid.Row="3" Grid.Column="1"/>
-        <Button x:ConnectionId='4' Name="delete" Content="Delete" Grid.Row="3" Grid.Column="2"/>
+        <local:GarageListUserControl x:ConnectionId='2' x:Name="GarageList" Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3"/>
+        <Button x:ConnectionId='3' Name="add" Content="Add" Grid.Row="3" Grid.Column="0"/>
+        <Button x:ConnectionId='4' Name="update" Content="Update" Grid.Row="3" Grid.Column="1"/>
+        <Button x:ConnectionId='5' Name="delete" Content="Delete" Grid.Row="3" Grid.Column="2"/>
     </Grid>
 </UserControl>
 

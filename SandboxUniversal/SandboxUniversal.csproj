@@ -107,6 +107,9 @@
     <Compile Include="UserControls\CrudUserControl.xaml.cs">
       <DependentUpon>CrudUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\GarageListUserControl.xaml.cs">
+      <DependentUpon>GarageListUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\GarageUserControl.xaml.cs">
       <DependentUpon>GarageUserControl.xaml</DependentUpon>
     </Compile>
@@ -137,6 +140,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\CrudUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\GarageListUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

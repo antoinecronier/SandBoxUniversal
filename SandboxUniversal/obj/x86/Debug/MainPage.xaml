@@ -21,9 +21,8 @@
         </Grid.ColumnDefinitions>
 
         <Grid x:ConnectionId='1' x:Name="GarageUC" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="2"/>
-        <Grid x:ConnectionId='2' x:Name="TestUC" Grid.Row="1" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="2"/>
 
-        <Button x:ConnectionId='3' Name="button" Content="click me" Grid.Row="3"                       />
+        <Button x:ConnectionId='2' Name="button" Content="click me" Grid.Row="3"                       />
     </Grid>
 </Page>
 

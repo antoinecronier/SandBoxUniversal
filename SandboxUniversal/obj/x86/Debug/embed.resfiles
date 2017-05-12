@@ -1,4 +1,5 @@
 App.xbf
 MainPage.xbf
 UserControls\CrudUserControl.xbf
+UserControls\GarageListUserControl.xbf
 UserControls\GarageUserControl.xbf

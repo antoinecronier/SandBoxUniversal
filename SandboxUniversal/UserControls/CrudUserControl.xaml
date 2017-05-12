@@ -22,11 +22,12 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ScrollViewer Name="scrollViewer" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="6">
+        <ScrollViewer Name="scrollViewer" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3">
             <Grid Name="gridDisplay">
                 
             </Grid>
         </ScrollViewer>
+        <local:GarageListUserControl x:Name="GarageList" Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3"/>
         <Button Name="add" Content="Add" Grid.Row="3" Grid.Column="0"/>
         <Button Name="update" Content="Update" Grid.Row="3" Grid.Column="1"/>
         <Button Name="delete" Content="Delete" Grid.Row="3" Grid.Column="2"/>

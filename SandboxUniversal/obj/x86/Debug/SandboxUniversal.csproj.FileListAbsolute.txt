@@ -226,3 +226,8 @@ C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\Sand
 C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\SandboxUniversal.csprojResolveAssemblyReference.cache
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\UserControls\GarageListUserControl.xbf
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\UserControls\GarageListUserControl.g.i.cs
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\UserControls\GarageListUserControl.g.cs
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\UserControls\GarageListUserControl.xaml
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\UserControls\GarageListUserControl.xbf

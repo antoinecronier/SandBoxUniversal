@@ -20,20 +20,30 @@ using Windows.UI.Xaml.Navigation;
 
 namespace SandboxUniversal.UserControls
 {
-    public partial class CrudUserControl : UserControl
+    public abstract partial class CrudUserControl : UserControl
     {
         protected Grid GridDisplay;
         public Button Add;
         public Button Update;
         public Button Delete;
 
-        public CrudUserControl(UserControlBase crudUCDisplay)
+        public CrudUserControl()
         {
             this.InitializeComponent();
             this.GridDisplay = this.gridDisplay;
             this.Add = this.add;
             this.Update = this.update;
             this.Delete = this.delete;
+        }
+    }
+
+    public class CrudUserControl<T> : CrudUserControl where T : EntityBase
+    {
+        UserControlBase crudUCDisplay;
+
+        public CrudUserControl(UserControlBase crudUCDisplay)
+        {
+            this.crudUCDisplay = crudUCDisplay;
 
             SetupDisplay(crudUCDisplay);
         }
@@ -43,21 +53,4 @@ namespace SandboxUniversal.UserControls
             this.GridDisplay.Children.Add(crudUCDisplay);
         }
     }
-
-    //public class CrudUserControl<T> : CrudUserControl where T : EntityBase
-    //{
-    //    UserControlBase crudUCDisplay;
-
-    //    public CrudUserControl(UserControlBase crudUCDisplay)
-    //    {
-    //        this.crudUCDisplay = crudUCDisplay;
-
-    //        SetupDisplay(crudUCDisplay);
-    //    }
-
-    //    private void SetupDisplay(UserControlBase crudUCDisplay)
-    //    {
-    //        this.GridDisplay.Children.Add(crudUCDisplay);
-    //    }
-    //}
 }

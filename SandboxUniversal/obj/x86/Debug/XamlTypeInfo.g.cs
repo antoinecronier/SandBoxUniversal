@@ -132,27 +132,39 @@ namespace SandboxUniversal.SandboxUniversal_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "SandboxUniversal.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "SandboxUniversal.UserControls.CrudUserControl";
-            _typeNameTable[4] = "SandboxUniversal.UserControls.Base.UserControlBase";
-            _typeNameTable[5] = "SandboxUniversal.UserControls.GarageUserControl";
-            _typeNameTable[6] = "SandboxUniversal.Models.Garage";
-            _typeNameTable[7] = "SandboxUniversal.Models.Base.EntityBase";
-            _typeNameTable[8] = "Object";
+            _typeNameTable[3] = "SandboxUniversal.UserControls.GarageListUserControl";
+            _typeNameTable[4] = "System.Collections.ObjectModel.ObservableCollection`1<SandboxUniversal.Models.Garage>";
+            _typeNameTable[5] = "System.Collections.ObjectModel.Collection`1<SandboxUniversal.Models.Garage>";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "SandboxUniversal.Models.Garage";
+            _typeNameTable[8] = "SandboxUniversal.Models.Base.EntityBase";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "Double";
+            _typeNameTable[11] = "Int32";
+            _typeNameTable[12] = "SandboxUniversal.UserControls.CrudUserControl";
+            _typeNameTable[13] = "SandboxUniversal.UserControls.Base.UserControlBase";
+            _typeNameTable[14] = "SandboxUniversal.UserControls.GarageUserControl";
 
-            _typeTable = new global::System.Type[9];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::SandboxUniversal.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::SandboxUniversal.UserControls.CrudUserControl);
-            _typeTable[4] = typeof(global::SandboxUniversal.UserControls.Base.UserControlBase);
-            _typeTable[5] = typeof(global::SandboxUniversal.UserControls.GarageUserControl);
-            _typeTable[6] = typeof(global::SandboxUniversal.Models.Garage);
-            _typeTable[7] = typeof(global::SandboxUniversal.Models.Base.EntityBase);
-            _typeTable[8] = typeof(global::System.Object);
+            _typeTable[3] = typeof(global::SandboxUniversal.UserControls.GarageListUserControl);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::SandboxUniversal.Models.Garage>);
+            _typeTable[5] = typeof(global::System.Collections.ObjectModel.Collection<global::SandboxUniversal.Models.Garage>);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::SandboxUniversal.Models.Garage);
+            _typeTable[8] = typeof(global::SandboxUniversal.Models.Base.EntityBase);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::System.Double);
+            _typeTable[11] = typeof(global::System.Int32);
+            _typeTable[12] = typeof(global::SandboxUniversal.UserControls.CrudUserControl);
+            _typeTable[13] = typeof(global::SandboxUniversal.UserControls.Base.UserControlBase);
+            _typeTable[14] = typeof(global::SandboxUniversal.UserControls.GarageUserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -188,8 +200,23 @@ namespace SandboxUniversal.SandboxUniversal_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::SandboxUniversal.MainPage(); }
-        private object Activate_5_GarageUserControl() { return new global::SandboxUniversal.UserControls.GarageUserControl(); }
-        private object Activate_6_Garage() { return new global::SandboxUniversal.Models.Garage(); }
+        private object Activate_3_GarageListUserControl() { return new global::SandboxUniversal.UserControls.GarageListUserControl(); }
+        private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::SandboxUniversal.Models.Garage>(); }
+        private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::SandboxUniversal.Models.Garage>(); }
+        private object Activate_7_Garage() { return new global::SandboxUniversal.Models.Garage(); }
+        private object Activate_14_GarageUserControl() { return new global::SandboxUniversal.UserControls.GarageUserControl(); }
+        private void VectorAdd_4_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::SandboxUniversal.Models.Garage>)instance;
+            var newItem = (global::SandboxUniversal.Models.Garage)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_5_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::SandboxUniversal.Models.Garage>)instance;
+            var newItem = (global::SandboxUniversal.Models.Garage)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -216,53 +243,141 @@ namespace SandboxUniversal.SandboxUniversal_XamlTypeInfo
                 xamlType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  SandboxUniversal.UserControls.CrudUserControl
+            case 3:   //  SandboxUniversal.UserControls.GarageListUserControl
+                userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_3_GarageListUserControl;
+                userType.AddMemberName("Garages");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  System.Collections.ObjectModel.ObservableCollection`1<SandboxUniversal.Models.Garage>
+                userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<SandboxUniversal.Models.Garage>"));
+                userType.CollectionAdd = VectorAdd_4_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 5:   //  System.Collections.ObjectModel.Collection`1<SandboxUniversal.Models.Garage>
+                userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_Collection;
+                userType.CollectionAdd = VectorAdd_5_Collection;
+                xamlType = userType;
+                break;
+
+            case 6:   //  Object
+                xamlType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  SandboxUniversal.Models.Garage
+                userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SandboxUniversal.Models.Base.EntityBase"));
+                userType.Activator = Activate_7_Garage;
+                userType.AddMemberName("Name");
+                userType.AddMemberName("Sold");
+                userType.AddMemberName("NbPlace");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  SandboxUniversal.Models.Base.EntityBase
+                userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Id");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  String
+                xamlType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  Double
+                xamlType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  Int32
+                xamlType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  SandboxUniversal.UserControls.CrudUserControl
                 userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  SandboxUniversal.UserControls.Base.UserControlBase
+            case 13:   //  SandboxUniversal.UserControls.Base.UserControlBase
                 userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  SandboxUniversal.UserControls.GarageUserControl
+            case 14:   //  SandboxUniversal.UserControls.GarageUserControl
                 userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SandboxUniversal.UserControls.Base.UserControlBase"));
-                userType.Activator = Activate_5_GarageUserControl;
+                userType.Activator = Activate_14_GarageUserControl;
                 userType.AddMemberName("CurrentGarage");
                 userType.SetIsLocalType();
                 xamlType = userType;
-                break;
-
-            case 6:   //  SandboxUniversal.Models.Garage
-                userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SandboxUniversal.Models.Base.EntityBase"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  SandboxUniversal.Models.Base.EntityBase
-                userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  Object
-                xamlType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
         }
 
 
-        private object get_0_GarageUserControl_CurrentGarage(object instance)
+        private object get_0_GarageListUserControl_Garages(object instance)
+        {
+            var that = (global::SandboxUniversal.UserControls.GarageListUserControl)instance;
+            return that.Garages;
+        }
+        private void set_0_GarageListUserControl_Garages(object instance, object Value)
+        {
+            var that = (global::SandboxUniversal.UserControls.GarageListUserControl)instance;
+            that.Garages = (global::System.Collections.ObjectModel.ObservableCollection<global::SandboxUniversal.Models.Garage>)Value;
+        }
+        private object get_1_Garage_Name(object instance)
+        {
+            var that = (global::SandboxUniversal.Models.Garage)instance;
+            return that.Name;
+        }
+        private void set_1_Garage_Name(object instance, object Value)
+        {
+            var that = (global::SandboxUniversal.Models.Garage)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_2_Garage_Sold(object instance)
+        {
+            var that = (global::SandboxUniversal.Models.Garage)instance;
+            return that.Sold;
+        }
+        private void set_2_Garage_Sold(object instance, object Value)
+        {
+            var that = (global::SandboxUniversal.Models.Garage)instance;
+            that.Sold = (global::System.Double)Value;
+        }
+        private object get_3_Garage_NbPlace(object instance)
+        {
+            var that = (global::SandboxUniversal.Models.Garage)instance;
+            return that.NbPlace;
+        }
+        private void set_3_Garage_NbPlace(object instance, object Value)
+        {
+            var that = (global::SandboxUniversal.Models.Garage)instance;
+            that.NbPlace = (global::System.Int32)Value;
+        }
+        private object get_4_EntityBase_Id(object instance)
+        {
+            var that = (global::SandboxUniversal.Models.Base.EntityBase)instance;
+            return that.Id;
+        }
+        private void set_4_EntityBase_Id(object instance, object Value)
+        {
+            var that = (global::SandboxUniversal.Models.Base.EntityBase)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_5_GarageUserControl_CurrentGarage(object instance)
         {
             var that = (global::SandboxUniversal.UserControls.GarageUserControl)instance;
             return that.CurrentGarage;
         }
-        private void set_0_GarageUserControl_CurrentGarage(object instance, object Value)
+        private void set_5_GarageUserControl_CurrentGarage(object instance, object Value)
         {
             var that = (global::SandboxUniversal.UserControls.GarageUserControl)instance;
             that.CurrentGarage = (global::SandboxUniversal.Models.Garage)Value;
@@ -275,11 +390,41 @@ namespace SandboxUniversal.SandboxUniversal_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "SandboxUniversal.UserControls.GarageListUserControl.Garages":
+                userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.UserControls.GarageListUserControl");
+                xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "Garages", "System.Collections.ObjectModel.ObservableCollection`1<SandboxUniversal.Models.Garage>");
+                xamlMember.Getter = get_0_GarageListUserControl_Garages;
+                xamlMember.Setter = set_0_GarageListUserControl_Garages;
+                break;
+            case "SandboxUniversal.Models.Garage.Name":
+                userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.Models.Garage");
+                xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_1_Garage_Name;
+                xamlMember.Setter = set_1_Garage_Name;
+                break;
+            case "SandboxUniversal.Models.Garage.Sold":
+                userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.Models.Garage");
+                xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "Sold", "Double");
+                xamlMember.Getter = get_2_Garage_Sold;
+                xamlMember.Setter = set_2_Garage_Sold;
+                break;
+            case "SandboxUniversal.Models.Garage.NbPlace":
+                userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.Models.Garage");
+                xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "NbPlace", "Int32");
+                xamlMember.Getter = get_3_Garage_NbPlace;
+                xamlMember.Setter = set_3_Garage_NbPlace;
+                break;
+            case "SandboxUniversal.Models.Base.EntityBase.Id":
+                userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.Models.Base.EntityBase");
+                xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_4_EntityBase_Id;
+                xamlMember.Setter = set_4_EntityBase_Id;
+                break;
             case "SandboxUniversal.UserControls.GarageUserControl.CurrentGarage":
                 userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.UserControls.GarageUserControl");
                 xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "CurrentGarage", "SandboxUniversal.Models.Garage");
-                xamlMember.Getter = get_0_GarageUserControl_CurrentGarage;
-                xamlMember.Setter = set_0_GarageUserControl_CurrentGarage;
+                xamlMember.Getter = get_5_GarageUserControl_CurrentGarage;
+                xamlMember.Setter = set_5_GarageUserControl_CurrentGarage;
                 break;
             }
             return xamlMember;
