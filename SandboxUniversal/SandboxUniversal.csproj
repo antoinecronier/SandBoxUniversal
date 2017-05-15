@@ -169,6 +169,16 @@
       <Name>SQLite for Universal App Platform</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Visual Studio 2015\Projects\texttospeech\C#\SpeechToTextClassLibrary\SpeechToTextClassLibrary.csproj">
+      <Project>{f91b145c-2efd-46a8-9b4f-215c29296212}</Project>
+      <Name>SpeechToTextClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Visual Studio 2015\Projects\texttospeech\C#\TextToSpeechClassLibrary\TextToSpeechClassLibrary.csproj">
+      <Project>{7633d3b7-9bdc-43f2-abf7-ada7d6664c88}</Project>
+      <Name>TextToSpeechClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

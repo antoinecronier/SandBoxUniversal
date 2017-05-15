@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TextToSpeechClassLibrary;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -28,12 +29,14 @@ namespace SandboxUniversal.Views
     {
         GarageCrudViewModel viewModel;
         public Grid GarageUC;
+        public Button Button;
 
         public GarageCrudView()
         {
             this.InitializeComponent();
 
             this.GarageUC = garageUC;
+            this.Button = button;
 
             viewModel = new GarageCrudViewModel(this);
         }

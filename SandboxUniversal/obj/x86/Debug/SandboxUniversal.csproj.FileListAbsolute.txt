@@ -231,3 +231,10 @@ C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\Sand
 C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\resources.en-us.resfiles
 C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\TextToSpeechClassLibrary.dll
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\TextToSpeechClassLibrary.pdb
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\TextToSpeechClassLibrary.pri
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\obj\x86\Debug\SandboxUniversal.csproj.GenerateResource.Cache
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\SpeechToTextClassLibrary.dll
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\SpeechToTextClassLibrary.pdb
+C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\SpeechToTextClassLibrary.pri

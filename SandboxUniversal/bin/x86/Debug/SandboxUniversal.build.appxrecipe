@@ -382,6 +382,12 @@
     <AppxPackagedFile Include="C:\Users\tactfactory\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tactfactory\Documents\Visual Studio 2015\Projects\texttospeech\C#\SpeechToTextClassLibrary\bin\x86\Debug\SpeechToTextClassLibrary.dll">
+      <PackagePath>SpeechToTextClassLibrary.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tactfactory\Documents\Visual Studio 2015\Projects\texttospeech\C#\TextToSpeechClassLibrary\bin\x86\Debug\TextToSpeechClassLibrary.dll">
+      <PackagePath>TextToSpeechClassLibrary.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UAP.2015\3.10.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>

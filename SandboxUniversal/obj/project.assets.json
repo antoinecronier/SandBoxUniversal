@@ -2211,6 +2211,20 @@
             "rid": "aot"
           }
         }
+      },
+      "SpeechToTextClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
+      },
+      "TextToSpeechClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
@@ -4505,6 +4519,20 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "SpeechToTextClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
+      },
+      "TextToSpeechClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
         }
       }
     },
@@ -6840,6 +6868,20 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "SpeechToTextClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
+      },
+      "TextToSpeechClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
@@ -9143,6 +9185,20 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "SpeechToTextClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
+      },
+      "TextToSpeechClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
         }
       }
     },
@@ -11487,6 +11543,20 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "SpeechToTextClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
+      },
+      "TextToSpeechClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
@@ -13790,6 +13860,20 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "SpeechToTextClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
+      },
+      "TextToSpeechClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
         }
       }
     },
@@ -16133,6 +16217,20 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "SpeechToTextClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        }
+      },
+      "TextToSpeechClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
         }
       }
     }
@@ -22386,13 +22484,25 @@
         "ref/xamarinwatchos10/_._",
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
+    },
+    "SpeechToTextClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../../../../Visual Studio 2015/Projects/texttospeech/C#/SpeechToTextClassLibrary/SpeechToTextClassLibrary.csproj",
+      "msbuildProject": "../../../../Visual Studio 2015/Projects/texttospeech/C#/SpeechToTextClassLibrary/SpeechToTextClassLibrary.csproj"
+    },
+    "TextToSpeechClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../../../../Visual Studio 2015/Projects/texttospeech/C#/TextToSpeechClassLibrary/TextToSpeechClassLibrary.csproj",
+      "msbuildProject": "../../../../Visual Studio 2015/Projects/texttospeech/C#/TextToSpeechClassLibrary/TextToSpeechClassLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.10586": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.3",
       "SQLite.Net-PCL >= 3.1.1",
-      "SQLiteNetExtensions >= 1.3.0"
+      "SQLiteNetExtensions >= 1.3.0",
+      "SpeechToTextClassLibrary >= 1.0.0",
+      "TextToSpeechClassLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -22411,7 +22521,14 @@
       ],
       "frameworks": {
         "uap10.0.10586": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tactfactory\\Documents\\Visual Studio 2015\\Projects\\texttospeech\\C#\\TextToSpeechClassLibrary\\TextToSpeechClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\tactfactory\\Documents\\Visual Studio 2015\\Projects\\texttospeech\\C#\\TextToSpeechClassLibrary\\TextToSpeechClassLibrary.csproj"
+            },
+            "C:\\Users\\tactfactory\\Documents\\Visual Studio 2015\\Projects\\texttospeech\\C#\\SpeechToTextClassLibrary\\SpeechToTextClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\tactfactory\\Documents\\Visual Studio 2015\\Projects\\texttospeech\\C#\\SpeechToTextClassLibrary\\SpeechToTextClassLibrary.csproj"
+            }
+          }
         }
       }
     },

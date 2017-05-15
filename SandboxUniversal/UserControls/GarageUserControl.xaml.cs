@@ -29,6 +29,13 @@ namespace SandboxUniversal.UserControls
         #endregion
 
         #region Variables
+        public TextBlock GarageNameBlock;
+        public TextBlock GarageSoldBlock;
+        public TextBlock GarageNbPlaceBlock;
+
+        public TextBox GarageNameBox;
+        public TextBox GarageSoldBox;
+        public TextBox GarageNbPlaceBox;
         #endregion
 
         #region Attributs
@@ -53,7 +60,15 @@ namespace SandboxUniversal.UserControls
         {
             this.InitializeComponent();
             base.DataContext = this;
-        }
+
+            GarageNameBlock = garageNameBlock;
+            GarageSoldBlock = garageSoldBlock;
+            GarageNbPlaceBlock = garageNbPlaceBlock;
+
+            GarageNameBox = garageNameBox;
+            GarageSoldBox = garageSoldBox;
+            GarageNbPlaceBox = garageNbPlaceBox;
+    }
         #endregion
 
         #region StaticFunctions
