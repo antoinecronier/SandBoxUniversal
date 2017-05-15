@@ -27,7 +27,7 @@
                 
             </Grid>
         </ScrollViewer>
-        <local:GarageListUserControl x:ConnectionId='2' x:Name="GarageList" Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3"/>
+        <ListView x:ConnectionId='2' Name="currentListView" IsItemClickEnabled="True" Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3"/>
         <Button x:ConnectionId='3' Name="add" Content="Add" Grid.Row="3" Grid.Column="0"/>
         <Button x:ConnectionId='4' Name="update" Content="Update" Grid.Row="3" Grid.Column="1"/>
         <Button x:ConnectionId='5' Name="delete" Content="Delete" Grid.Row="3" Grid.Column="2"/>

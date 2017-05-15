@@ -306,7 +306,7 @@ namespace SandboxUniversal.SandboxUniversal_XamlTypeInfo
 
             case 13:   //  SandboxUniversal.UserControls.Base.UserControlBase
                 userType = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.AddMemberName("CurrentObject");
+                userType.AddMemberName("currentObject");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -373,15 +373,15 @@ namespace SandboxUniversal.SandboxUniversal_XamlTypeInfo
             var that = (global::SandboxUniversal.Models.Base.EntityBase)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_5_UserControlBase_CurrentObject(object instance)
+        private object get_5_UserControlBase_currentObject(object instance)
         {
             var that = (global::SandboxUniversal.UserControls.Base.UserControlBase)instance;
-            return that.CurrentObject;
+            return that.currentObject;
         }
-        private void set_5_UserControlBase_CurrentObject(object instance, object Value)
+        private void set_5_UserControlBase_currentObject(object instance, object Value)
         {
             var that = (global::SandboxUniversal.UserControls.Base.UserControlBase)instance;
-            that.CurrentObject = (global::System.Object)Value;
+            that.currentObject = (global::System.Object)Value;
         }
         private object get_6_GarageUserControl_CurrentGarage(object instance)
         {
@@ -431,11 +431,11 @@ namespace SandboxUniversal.SandboxUniversal_XamlTypeInfo
                 xamlMember.Getter = get_4_EntityBase_Id;
                 xamlMember.Setter = set_4_EntityBase_Id;
                 break;
-            case "SandboxUniversal.UserControls.Base.UserControlBase.CurrentObject":
+            case "SandboxUniversal.UserControls.Base.UserControlBase.currentObject":
                 userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.UserControls.Base.UserControlBase");
-                xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "CurrentObject", "Object");
-                xamlMember.Getter = get_5_UserControlBase_CurrentObject;
-                xamlMember.Setter = set_5_UserControlBase_CurrentObject;
+                xamlMember = new global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlMember(this, "currentObject", "Object");
+                xamlMember.Getter = get_5_UserControlBase_currentObject;
+                xamlMember.Setter = set_5_UserControlBase_currentObject;
                 break;
             case "SandboxUniversal.UserControls.GarageUserControl.CurrentGarage":
                 userType = (global::SandboxUniversal.SandboxUniversal_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SandboxUniversal.UserControls.GarageUserControl");

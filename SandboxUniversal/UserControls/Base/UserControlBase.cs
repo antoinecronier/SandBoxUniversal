@@ -19,6 +19,13 @@ namespace SandboxUniversal.UserControls.Base
         #endregion
 
         #region Variables
+        private Object currentObject;
+        public Object CurrentObject
+        {
+            get { return this.currentObject; }
+            set { this.currentObject = value;
+                OnPropertyChanged("CurrentObject"); }
+        }
         #endregion
 
         #region Attributs

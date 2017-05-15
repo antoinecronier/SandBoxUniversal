@@ -48,13 +48,12 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="SandboxUniversal.UserControls.GarageListUserControl" />
-    <RootType FullName="SandboxUniversal.UserControls.CrudUserControl" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Name" />
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
+    <RootType FullName="SandboxUniversal.UserControls.CrudUserControl" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
@@ -72,6 +71,7 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
     </RootType>
+    <RootType FullName="SandboxUniversal.UserControls.GarageListUserControl" />
     <RootType FullName="SandboxUniversal.UserControls.Base.UserControlBase">
       <RootProperty Name="Content" />
     </RootType>

@@ -3,6 +3,7 @@ using SandboxUniversal.Models.Base;
 using SandboxUniversal.UserControls.Base;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,6 +24,7 @@ namespace SandboxUniversal.UserControls
     public abstract partial class CrudUserControl : UserControl
     {
         protected Grid GridDisplay;
+        protected ListView CurrentListView;
         public Button Add;
         public Button Update;
         public Button Delete;
@@ -34,16 +36,21 @@ namespace SandboxUniversal.UserControls
             this.Add = this.add;
             this.Update = this.update;
             this.Delete = this.delete;
+            this.CurrentListView = this.currentListView;
         }
     }
 
     public class CrudUserControl<T> : CrudUserControl where T : EntityBase
     {
         UserControlBase crudUCDisplay;
+        SqliteDBManager<T> dbManager;
+        ObservableCollection<T> listItems { get; set; }
 
         public CrudUserControl(UserControlBase crudUCDisplay)
         {
             this.crudUCDisplay = crudUCDisplay;
+            this.dbManager = new SqliteDBManager<T>();
+            this.listItems = new ObservableCollection<T>();
 
             SetupDisplay(crudUCDisplay);
         }
@@ -51,6 +58,23 @@ namespace SandboxUniversal.UserControls
         private void SetupDisplay(UserControlBase crudUCDisplay)
         {
             this.GridDisplay.Children.Add(crudUCDisplay);
+            this.CurrentListView.ItemsSource = listItems;
+            this.CurrentListView.ItemClick += CurrentListView_ItemClick;
+            SetupList();
+            //this.CurrentListView.ItemTemplate = ;
+        }
+
+        private void CurrentListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.crudUCDisplay.CurrentObject = e.ClickedItem;
+        }
+
+        private void SetupList()
+        {
+            foreach (var item in dbManager.Get())
+            {
+                this.listItems.Add(item);
+            }
         }
     }
 }

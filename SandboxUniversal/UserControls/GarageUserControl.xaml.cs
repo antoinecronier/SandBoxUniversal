@@ -51,6 +51,7 @@ namespace SandboxUniversal.UserControls
         public GarageUserControl()
         {
             this.InitializeComponent();
+            this.CurrentObject = CurrentGarage;
             base.DataContext = this;
         }
         #endregion
