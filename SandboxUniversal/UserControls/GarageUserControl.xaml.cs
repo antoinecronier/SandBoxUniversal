@@ -42,6 +42,7 @@ namespace SandboxUniversal.UserControls
             set
             {
                 currentGarage = value;
+                this.CurrentObject = currentGarage;
                 base.OnPropertyChanged("CurrentGarage");
             }
         }
@@ -51,7 +52,6 @@ namespace SandboxUniversal.UserControls
         public GarageUserControl()
         {
             this.InitializeComponent();
-            this.CurrentObject = CurrentGarage;
             base.DataContext = this;
         }
         #endregion

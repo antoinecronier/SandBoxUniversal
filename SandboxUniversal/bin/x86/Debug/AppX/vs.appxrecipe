@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-12T15:06:18.347</Modified>
+      <Modified>2017-05-15T08:28:54.500</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\SandboxUniversal.exe">
       <PackagePath>entrypoint\SandboxUniversal.exe</PackagePath>
-      <Modified>2017-05-12T15:06:17.068</Modified>
+      <Modified>2017-05-15T08:28:53.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tactfactory\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -555,7 +555,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\SandboxUniversal.xr.xml">
       <PackagePath>SandboxUniversal.xr.xml</PackagePath>
-      <Modified>2017-05-12T14:56:37.622</Modified>
+      <Modified>2017-05-15T08:05:13.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -564,11 +564,11 @@
     <AppxPackagedFile Include="C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-12T15:01:28.274</Modified>
+      <Modified>2017-05-15T08:05:24.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tactfactory\Documents\Visual Studio 2017\Projects\SandboxUniversal\SandboxUniversal\bin\x86\Debug\Core\SandboxUniversal.exe">
       <PackagePath>SandboxUniversal.exe</PackagePath>
-      <Modified>2017-05-12T15:06:18.255</Modified>
+      <Modified>2017-05-15T08:28:54.428</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

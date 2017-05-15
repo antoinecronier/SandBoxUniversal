@@ -97,9 +97,6 @@
     </Compile>
     <Compile Include="Database\SqliteDBManager.cs" />
     <Compile Include="Database\SqliteManager.cs" />
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Models\Base\EntityBase.cs" />
     <Compile Include="Models\Garage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,6 +109,10 @@
     </Compile>
     <Compile Include="UserControls\GarageUserControl.xaml.cs">
       <DependentUpon>GarageUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\GarageCrudViewModel.cs" />
+    <Compile Include="Views\GarageCrudView.xaml.cs">
+      <DependentUpon>GarageCrudView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -135,10 +136,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UserControls\CrudUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -148,6 +145,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\GarageUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GarageCrudView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

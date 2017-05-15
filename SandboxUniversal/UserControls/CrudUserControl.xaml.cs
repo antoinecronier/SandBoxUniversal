@@ -24,7 +24,7 @@ namespace SandboxUniversal.UserControls
     public abstract partial class CrudUserControl : UserControl
     {
         protected Grid GridDisplay;
-        protected ListView CurrentListView;
+        public ListView CurrentListView;
         public Button Add;
         public Button Update;
         public Button Delete;
@@ -44,13 +44,13 @@ namespace SandboxUniversal.UserControls
     {
         UserControlBase crudUCDisplay;
         SqliteDBManager<T> dbManager;
-        ObservableCollection<T> listItems { get; set; }
+        public ObservableCollection<T> ListItems { get; set; }
 
         public CrudUserControl(UserControlBase crudUCDisplay)
         {
             this.crudUCDisplay = crudUCDisplay;
             this.dbManager = new SqliteDBManager<T>();
-            this.listItems = new ObservableCollection<T>();
+            this.ListItems = new ObservableCollection<T>();
 
             SetupDisplay(crudUCDisplay);
         }
@@ -58,22 +58,16 @@ namespace SandboxUniversal.UserControls
         private void SetupDisplay(UserControlBase crudUCDisplay)
         {
             this.GridDisplay.Children.Add(crudUCDisplay);
-            this.CurrentListView.ItemsSource = listItems;
-            this.CurrentListView.ItemClick += CurrentListView_ItemClick;
+            this.CurrentListView.ItemsSource = ListItems;
             SetupList();
             //this.CurrentListView.ItemTemplate = ;
-        }
-
-        private void CurrentListView_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            this.crudUCDisplay.CurrentObject = e.ClickedItem;
         }
 
         private void SetupList()
         {
             foreach (var item in dbManager.Get())
             {
-                this.listItems.Add(item);
+                this.ListItems.Add(item);
             }
         }
     }
